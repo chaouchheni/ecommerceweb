@@ -1,0 +1,12 @@
+<!-- login.component.html -->
+<div>
+    <h2>Login</h2>
+    <form (submit)="login(email.value, password.value)">
+      <label>Email:</label>
+      <input type="email" #email required>
+      <label>Password:</label>
+      <input type="password" #password required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  

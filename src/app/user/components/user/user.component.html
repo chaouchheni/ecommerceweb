@@ -1,0 +1,15 @@
+<!-- user.component.html -->
+<div>
+  <h2>Add User</h2>
+  <form (submit)="addUser(user)">
+    <!-- Implement form fields for user details -->
+    <!-- Example: -->
+    <label>user Name:</label>
+    <input type="text" [(ngModel)]="user.username" required>
+    <label>Email:</label>
+    <input type="email" [(ngModel)]="user.email" required>
+    <label>Password:</label>
+    <input type="password" [(ngModel)]="user.password" required>
+    <button type="submit">Add User</button>
+  </form>
+</div>
